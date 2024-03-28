@@ -1,0 +1,84 @@
+
+.review-section{
+    padding: 40px 90px;
+}
+.heading-review{
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.rev-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    row-gap: 30px;
+    opacity: 1;
+}
+.rev-card{
+    border-radius: 18px;
+    padding: 30px;
+    width: 18rem;
+    background: linear-gradient(195deg,#1e1c37,#3b3767,#1e1c37);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+.rev-cards:hover > :not(:hover){
+    opacity: 0.4;
+    transform: scale(0.85);
+}
+.rev-text-p{
+    height: 84px;
+    text-align: start;
+    font-size: 14px;
+    margin-bottom: 0rem;
+}
+.card-img{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-text{
+    display: flex;
+    flex-direction: column;
+}
+.img-text > p{
+    margin-bottom: 0rem;
+}
+.img-text > span{
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:800px){
+    .review-section{
+        padding: 40px;
+    }
+    .rev-card{
+        width: 16rem;
+    }
+}
+@media screen and (max-width:611px){
+    .review-section{
+        padding: 0px;
+    }
+    .heading-review{
+        font-size: 40px;
+    }
+    .rev-cards{
+        padding: 0px 20px;
+        margin-bottom: 30px;
+    }
+    .rev-card{
+        padding: 10px 30px;
+        align-items: center;
+        width: 16rem;
+    }
+}
+

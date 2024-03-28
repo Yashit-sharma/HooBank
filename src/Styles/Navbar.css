@@ -1,0 +1,97 @@
+
+body{
+    background-color: rgb(12, 12, 18);
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+.img-div{
+    width: 140px !important;
+    height: 50px;
+}
+.img-div > img{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    color : #E5E5E5;
+    width: 100vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 5px #E5E5E5;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    z-index: 2;
+    position: fixed;
+}
+.navbar :nth-child(n){
+    background-color: transparent;
+    transition: 0.1s ease;
+}
+.links > span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    font-style: bold;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+.logo--image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+.logo--image > a > img{
+    cursor: pointer;
+    height: 65px;
+    width: 90px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:716px){
+    .navbar{
+        padding: 10px 40px;
+    }
+    .img-div > img{
+        width: 70%;
+    }
+    .links{
+        gap: 1.1rem;
+    }
+}
+@media screen and (max-width:650px){
+    .links > span{
+        font-size: 14.5px !important;
+    }
+    .links{
+        gap: 0.8rem;
+    }
+}
+@media screen and (max-width:500px){
+    .hero-section{
+        padding: 30px 30px 60px 30px !important;
+    }
+    .navbar{
+        padding: 10px 20px;
+    }
+    .img-div{
+        width: fit-content
+    }
+    .links > span{
+        font-size: 13px !important;
+    }
+}
