@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 export default function Hero() {
   return (
    <>
-   <div className="hero-section">
+   <div className="hero-section" id='Home'>
     <div className="left">
         <div className="left-text">
         <p className='grey left-hero-text'>The Next</p>
@@ -29,8 +29,7 @@ export default function Hero() {
         </div>
     </div>
    </div>
-   <div 
-   className="hero-info">
+   <div className="hero-info">
     <span className='hero-values'>3800 + <span className='gradient-2 val-text'> USER ACTIVE</span></span>
     <span className='hero-values'>230 + <span className='gradient-2 val-text'> TRUSTED BY COMPANY</span></span>
     <span className='hero-values'>$230M + <span className='gradient-2 val-text'>TRANSCATIONS</span></span>

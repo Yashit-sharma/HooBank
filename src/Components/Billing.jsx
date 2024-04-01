@@ -1,15 +1,31 @@
 import React from 'react'
+import { useRef } from "react"
 import '../Styles/Billing.css'
 import Bill from '../Assets/bill.png'
 import AppStore from '../Assets/apple.svg'
 import PlayStore from '../Assets/google.svg'
+import {motion,useScroll,useTransform} from 'framer-motion'
 export default function Billing() {
+  const ref = useRef(null);
+  const {scrollYProgress} = useScroll(
+  { 
+  target : ref,
+  offset : ["0 1", "1.2 1"]
+  });
+
+  const animationProps = {
+    opacity: scrollYProgress, // Fade in as scroll progresses
+};
+
   return (
    <>
    <div className="billing-section">
-    <div className="left-bill">
+    <motion.div 
+    ref={ref}
+    style={animationProps}
+    className="left-bill">
         <img className='bill-img' src={Bill} alt="" />
-    </div>
+    </motion.div>
     <div className="right-bill">
             <span className='about-span'>Easily control your</span> 
             <span className='about-span'> billing & invoicing.</span>

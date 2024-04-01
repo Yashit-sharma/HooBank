@@ -27,7 +27,7 @@ const Data = [
 export default function Reviews() {
   return (
    <>
-   <div className="review-section">
+   <div className="review-section" id="Reviews">
     <span className='heading-review gradient'>What People Think ?</span>
     <div className="rev-cards">
 {Data.map((ele,index) =>{
